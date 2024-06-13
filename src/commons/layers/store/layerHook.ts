@@ -4,10 +4,10 @@ import type { ICommonsStore } from "../..";
 import { useAbsApi } from "../../store/common";
 import { LayerType } from "../AbsLayerType";
 import {
-  rdxLayerClose,
-  rdxLayers,
-  rdxLayerSelected,
   rdxContentHeignt,
+  rdxLayerClose,
+  rdxLayerSelected,
+  rdxLayers,
 } from "./layerR";
 import type { ILayerDo } from "./layerVo";
 

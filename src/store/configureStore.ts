@@ -1,8 +1,4 @@
-import {
-  configureStore,
-  type ThunkAction,
-  // 미들웨어를 다른방법으로 추가할수 있는 방법 찾아야함
-} from "@reduxjs/toolkit";
+import { configureStore, type ThunkAction } from "@reduxjs/toolkit";
 import rootReducer, { type IState } from "./modules";
 // import { getLoadingMiddleware } from "commons/loading/store/loadingR";
 
@@ -12,6 +8,7 @@ export type AppThunk<ReturnType = void> = ThunkAction<
   ReturnType,
   IState,
   unknown,
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   any
 >;
 

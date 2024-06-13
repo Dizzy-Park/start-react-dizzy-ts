@@ -1,7 +1,7 @@
 import React from "react";
+import styled from "styled-components";
 import Spinner from "./display/Spinner";
 import useLoading from "./store/loadingHook";
-import styled from "styled-components";
 
 const LoadArea = styled.div`
   display: flex;

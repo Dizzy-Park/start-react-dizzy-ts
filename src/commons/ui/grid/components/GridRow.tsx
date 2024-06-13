@@ -1,15 +1,15 @@
 import React, { Fragment } from "react";
 import {
+  subkeySplit,
+  type IGridPosition,
+  type IGridSetting,
+  type IGrideSub,
+} from "../GridVo";
+import {
   useGridOptionInit,
   //   useGridSubInit,
   useGridSubValue,
 } from "../store/GridHook";
-import {
-  type IGrideSub,
-  type IGridPosition,
-  type IGridSetting,
-  subkeySplit,
-} from "../GridVo";
 import WidthSubscription from "./WidthSubscription";
 
 function getProperty<T, K extends keyof T>(obj: T, key: K) {

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export const useObserver = () => {
   const ref = useRef<HTMLElement>(null);

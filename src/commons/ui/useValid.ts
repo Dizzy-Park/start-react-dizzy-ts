@@ -1,17 +1,16 @@
-import { useSelector } from "react-redux";
-import { useDispatch } from "react-redux";
-import { useSelectorEq } from "../store/common";
-import { rdxSetUi, rdxTotalSetUi } from "./uiR";
-import { UiType, type IUiActionValue, type IUiAction } from "./uiVo";
 import React, { useEffect } from "react";
-import { useAbsAlert } from "../popup/store/absPopupHook";
+import { useDispatch, useSelector } from "react-redux";
 import type { ICommonsStore } from "..";
+import { useAbsAlert } from "../popup/store/absPopupHook";
+import { useSelectorEq } from "../store/common";
 import {
   addInit,
   privateUseInitCallback,
   privateUseRemoveCallback,
   removeEnd,
 } from "./uiCore";
+import { rdxSetUi, rdxTotalSetUi } from "./uiR";
+import { UiType, type IUiAction, type IUiActionValue } from "./uiVo";
 
 /**
  * @param EMAIL email

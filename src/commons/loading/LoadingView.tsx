@@ -1,4 +1,3 @@
-import React from "react";
 import styled, { type IStyledComponent } from "styled-components";
 import Spinner from "./display/Spinner";
 import { useLoadingValue } from "./store/loadingHook";

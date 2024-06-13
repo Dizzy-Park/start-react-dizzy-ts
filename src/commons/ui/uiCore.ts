@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
-import { UiCenter, UiType, type IUiAction } from "./uiVo";
 import { rdxTotalRemoveUi, rdxTotalSetUi } from "./uiR";
+import { UiCenter, UiType, type IUiAction } from "./uiVo";
 
 /** 액션을 한군데로 모아주는 변수 */
 const center: { [key: string]: Array<IUiAction> } = {};

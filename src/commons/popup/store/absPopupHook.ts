@@ -1,6 +1,7 @@
 import { useDispatch } from "react-redux";
+import type { ICommonsStore } from "../..";
+import { useSelectorEq } from "../../store/common";
 import { AbsPopupType } from "../AbsPopupType";
-import { rdxPopupClose, rdxPopupOpen } from "./popupR";
 import {
   ButtonState,
   type AlertParam,
@@ -9,8 +10,7 @@ import {
   type IPopupDo,
   type PopupCallBackParam,
 } from "./absPopupVo";
-import type { ICommonsStore } from "../..";
-import { useSelectorEq } from "../../store/common";
+import { rdxPopupClose, rdxPopupOpen } from "./popupR";
 
 /**
  * @param type {@link AbsPopupType} 팝업 타입
@@ -49,7 +49,7 @@ export function usePopupData<
   T,
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   K extends IButton = any,
-  U extends PopupCallBackParam = ButtonState
+  U extends PopupCallBackParam = ButtonState,
 >(type: AbsPopupType | string) {
   const { popupDo } = useSelectorEq((state: ICommonsStore) => ({
     popupDo: state.popups.popup[type] ? state.popups.popup[type] : undefined,

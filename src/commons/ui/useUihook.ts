@@ -2,22 +2,6 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import type { ICommonsStore } from "..";
 import { useSelectorEq } from "../store/common";
-import { rdxSetUi, rdxTotalSetUi, rdxTotalRemoveUi } from "./uiR";
-import {
-  type IValid,
-  changeValid,
-  useValidChange,
-  useValid,
-  validInput,
-} from "./useValid";
-import {
-  UiCenter,
-  type IUiActionValue,
-  UiType,
-  type IUiAction,
-  type ICheckBox,
-  type FileType,
-} from "./uiVo";
 import {
   addInit,
   addUi,
@@ -30,6 +14,22 @@ import {
   removeUi,
   resteUi,
 } from "./uiCore";
+import { rdxSetUi, rdxTotalRemoveUi, rdxTotalSetUi } from "./uiR";
+import {
+  UiCenter,
+  UiType,
+  type FileType,
+  type ICheckBox,
+  type IUiAction,
+  type IUiActionValue,
+} from "./uiVo";
+import {
+  changeValid,
+  useValid,
+  useValidChange,
+  validInput,
+  type IValid,
+} from "./useValid";
 
 /**
  * ui 컴포넌트에 값을 일률 적으로 전달하기 위한 hook
@@ -348,8 +348,8 @@ export const useSelectBox = (
     init !== undefined
       ? init
       : selectValue !== undefined
-      ? selectValue
-      : undefined;
+        ? selectValue
+        : undefined;
   useInitEffect({
     type: UiType.SELECT_BOX,
     key: id,
@@ -540,8 +540,8 @@ export const useCheckBoxGroup = (
         init !== undefined
           ? init
           : checkValue?.value
-          ? checkValue.value
-          : list?.filter(i => !i.isAll).map(i => i.id),
+            ? checkValue.value
+            : list?.filter(i => !i.isAll).map(i => i.id),
     },
     { type: UiType.CHECK_BOX_GROUP, key: id }
   );
@@ -704,8 +704,8 @@ export const useInputFile = (
   const initValue = init
     ? { filename: init }
     : inputFileValue
-    ? inputFileValue
-    : { filename: "" };
+      ? inputFileValue
+      : { filename: "" };
   useInitEffect({
     type: UiType.INPUT_FILE,
     key: id,

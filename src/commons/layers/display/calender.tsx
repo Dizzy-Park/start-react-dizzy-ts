@@ -1,8 +1,8 @@
-import React, { useEffect, useRef, useState } from "react";
+import moment from "moment";
+import { useEffect, useRef, useState } from "react";
 import styled, { css } from "styled-components";
 import { mouseUp } from "../../utils";
 import useLayer from "../store/layerHook";
-import moment from "moment";
 
 const CalenderWrap = styled.div`
   overflow: hidden;

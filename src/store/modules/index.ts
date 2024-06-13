@@ -1,8 +1,8 @@
 "use client";
 
-import { type ICommonsStore } from "/commons";
-import { combineReducers } from "redux";
 import CommonsSlim from "commons/store/CommonsSlim";
+import { combineReducers } from "redux";
+import { type ICommonsStore } from "/commons";
 /**
  * state interface 설정
  */

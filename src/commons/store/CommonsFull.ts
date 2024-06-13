@@ -1,10 +1,10 @@
+import type { Reducer } from "@reduxjs/toolkit";
+import cookies from "../cookies/cookiesR";
+import layers from "../layers/store/layerR";
 import loading from "../loading/store/loadingR";
 import popups from "../popup/store/popupR";
-import ui from "../ui/uiR";
 import storage from "../storage/storageR";
-import layers from "../layers/store/layerR";
-import cookies from "../cookies/cookiesR";
-import type { Reducer } from "@reduxjs/toolkit";
+import ui from "../ui/uiR";
 
 /**
  * 모든 리듀서 추가처리

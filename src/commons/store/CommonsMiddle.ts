@@ -1,8 +1,8 @@
+import type { Reducer } from "@reduxjs/toolkit";
 import loading from "../loading/store/loadingR";
 import popups from "../popup/store/popupR";
-import ui from "../ui/uiR";
 import storage from "../storage/storageR";
-import type { Reducer } from "@reduxjs/toolkit";
+import ui from "../ui/uiR";
 
 /**
  * 필요한 리듀서만 컴파일 되게 처리

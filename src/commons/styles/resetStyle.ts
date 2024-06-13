@@ -3,7 +3,8 @@ import { css } from "styled-components";
 export const ResetStyle = css`
   @font-face {
     font-family: "NotoSans";
-    src: url("/fonts/NotoSansKR-Regular.otf") format("opentype"),
+    src:
+      url("/fonts/NotoSansKR-Regular.otf") format("opentype"),
       url("/fonts/NotoSansKR-Regular.woff2") format("woff2"),
       url("/fonts/NotoSansKR-Regular.woff") format("woff");
     font-weight: 400;
@@ -12,7 +13,8 @@ export const ResetStyle = css`
   }
   @font-face {
     font-family: "NotoSans";
-    src: url("/fonts/NotoSansKR-Medium.otf") format("opentype"),
+    src:
+      url("/fonts/NotoSansKR-Medium.otf") format("opentype"),
       url("/fonts/NotoSansKR-Medium.woff2") format("woff2"),
       url("/fonts/NotoSansKR-Medium.woff") format("woff");
     font-weight: 500;
@@ -21,7 +23,8 @@ export const ResetStyle = css`
   }
   @font-face {
     font-family: "NotoSans";
-    src: url("/fonts/NotoSansKR-Bold.otf") format("opentype"),
+    src:
+      url("/fonts/NotoSansKR-Bold.otf") format("opentype"),
       url("/fonts/NotoSansKR-Bold.woff2") format("woff2"),
       url("/fonts/NotoSansKR-Bold.woff") format("woff");
     font-weight: 700;
@@ -33,7 +36,8 @@ export const ResetStyle = css`
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-    src: url("/fonts/DMSans-Regular.woff2") format("woff2"),
+    src:
+      url("/fonts/DMSans-Regular.woff2") format("woff2"),
       url("/fonts/DMSans-Regular.woff") format("woff"),
       url("/fonts/DMSans-Regular.ttf") format("truetype");
   }
@@ -43,7 +47,8 @@ export const ResetStyle = css`
     font-weight: 500;
     font-style: normal;
     font-display: swap;
-    src: url("../fonts/DMSans-Medium.woff2") format("woff2"),
+    src:
+      url("../fonts/DMSans-Medium.woff2") format("woff2"),
       url("../fonts/DMSans-Medium.woff") format("woff"),
       url("../fonts/DMSans-Medium.ttf") format("truetype");
   }
@@ -53,7 +58,8 @@ export const ResetStyle = css`
     font-weight: 700;
     font-style: normal;
     font-display: swap;
-    src: url("/fonts/DMSans-Bold.otf") format("woff2"),
+    src:
+      url("/fonts/DMSans-Bold.otf") format("woff2"),
       url("/fonts/DMSans-Bold.woff") format("woff"),
       url("/fonts/DMSans-Bold.otf") format("opentype");
   }

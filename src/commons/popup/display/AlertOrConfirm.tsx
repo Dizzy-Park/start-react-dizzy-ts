@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import { usePopupData } from "../store/absPopupHook";
 import AbsPopup, { type IAbsPopupProps } from "./AbsPopup";

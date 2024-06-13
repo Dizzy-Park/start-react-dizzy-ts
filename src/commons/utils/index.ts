@@ -145,14 +145,17 @@ export async function forEachPromise<T, R>(
   func: (item: T, index: number) => Promise<R>
 ): Promise<Array<R>> {
   const ar: Array<R> = [];
-  await items.reduce((promise: Promise<R>, item: T, idx: number) => {
-    // console.log(item)
-    // console.log(idx)
-    return promise.then(async () => {
-      ar.push(await func(item, idx));
-      return promise;
-    });
-  }, Promise.resolve({} as R));
+  await items.reduce(
+    (promise: Promise<R>, item: T, idx: number) => {
+      // console.log(item)
+      // console.log(idx)
+      return promise.then(async () => {
+        ar.push(await func(item, idx));
+        return promise;
+      });
+    },
+    Promise.resolve({} as R)
+  );
   return ar;
 }
 

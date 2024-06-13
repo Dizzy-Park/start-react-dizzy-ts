@@ -1,10 +1,10 @@
+import cookies from "./cookies/cookiesR";
 import layers, { type ILayerState } from "./layers/store/layerR";
 import loading, { type ILoadingState } from "./loading/store/loadingR";
-import popups from "./popup/store/popupR";
 import type { IPopupState } from "./popup/store/absPopupVo";
-import ui from "./ui/uiR";
+import popups from "./popup/store/popupR";
 import storage from "./storage/storageR";
-import cookies from "./cookies/cookiesR";
+import ui from "./ui/uiR";
 import type { IUi } from "./ui/uiVo";
 
 export interface ICommonsStore {

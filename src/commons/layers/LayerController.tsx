@@ -1,8 +1,8 @@
 import React, { Suspense } from "react";
 import styled from "styled-components";
-import useLayer from "./store/layerHook";
-import layers from "./AbsLayerType";
 import Spinner from "../loading/display/Spinner";
+import layers from "./AbsLayerType";
+import useLayer from "./store/layerHook";
 
 const LayerArea = styled.section`
   position: absolute;

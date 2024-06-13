@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import type { ICommonsStore } from "..";
 import { useSelectorEq } from "../store/common";
-import { rdxSetUi, rdxRemoveUi, rdxTotalSetUi } from "./uiR";
+import { rdxRemoveUi, rdxSetUi, rdxTotalSetUi } from "./uiR";
 import { UiType, type IUiAction } from "./uiVo";
 
 export const useGridCheckBox = (

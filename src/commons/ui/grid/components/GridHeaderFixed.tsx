@@ -1,4 +1,3 @@
-import React from "react";
 import type { IGridSetting, sortType } from "../GridVo";
 import SortHeader from "./SortHeader";
 

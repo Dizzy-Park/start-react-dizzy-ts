@@ -14,10 +14,12 @@ export interface IConfig {
   };
 }
 
-const inappAgent = "vbridge"
+const inappAgent = "vbridge";
 
 export const isInApp = () => {
-  return window.navigator.userAgent.toLocaleLowerCase().indexOf(inappAgent) > -1;
+  return (
+    window.navigator.userAgent.toLocaleLowerCase().indexOf(inappAgent) > -1
+  );
 };
 
 export const config: IConfig = {
@@ -37,4 +39,3 @@ export const config: IConfig = {
     BACKEND_R_URL: process.env.NEXT_PUBLIC_BACKEND_R_URL,
   },
 };
-

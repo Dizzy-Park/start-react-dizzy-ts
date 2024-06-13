@@ -5,7 +5,7 @@ export interface IPopupState<
   T = any,
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   K extends IButton = any,
-  U extends PopupCallBackParam = ButtonState
+  U extends PopupCallBackParam = ButtonState,
 > {
   isPopup: boolean;
   popup: { [key: string]: IPopupDo<T, K, U> };
@@ -67,7 +67,7 @@ export interface IPopupDo<
   T = any,
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   K extends IButton = any,
-  U extends PopupCallBackParam = ButtonState
+  U extends PopupCallBackParam = ButtonState,
 > {
   /** 팝업 타입 설정 */
   type: PopupType;

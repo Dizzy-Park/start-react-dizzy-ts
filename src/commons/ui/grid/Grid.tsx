@@ -1,18 +1,18 @@
-import React, { type ForwardedRef, type Key, useRef } from "react";
+import AbsLoading from "commons/loading/AbsLoading";
+import React, { useRef, type ForwardedRef, type Key } from "react";
 import styled, { css, type IStyledComponent } from "styled-components";
+import { TableContainer } from "./GridStyled";
+import type {
+  IGridPosition,
+  IGridSetting,
+  IGrideSub,
+  sortType,
+} from "./GridVo";
 import GridHeaderFixed from "./components/GridHeaderFixed";
 import GridRow from "./components/GridRow";
 import SortHeader from "./components/SortHeader";
 import SumRow from "./components/SumRow";
-import { TableContainer } from "./GridStyled";
-import type {
-  IGrideSub,
-  IGridPosition,
-  IGridSetting,
-  sortType,
-} from "./GridVo";
 import { useIntersectionObserver } from "./store/GridHook";
-import AbsLoading from "commons/loading/AbsLoading";
 
 const EmptyList = styled.tr<{ iconType?: string }>`
   > td:first-of-type::before {
@@ -109,7 +109,7 @@ export interface IGridProps<Data, Setting, Not> {
 function Grid<
   Data,
   Setting extends IGridSetting<Data>[],
-  Not extends { text?: string; message?: string }
+  Not extends { text?: string; message?: string },
 >(props: IGridProps<Data, Setting, Not>) {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const change = (position: IGridPosition, value?: any) => {

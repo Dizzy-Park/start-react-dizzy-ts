@@ -1,10 +1,10 @@
 "use client";
 
-import React, { Suspense } from "react";
+import { Suspense } from "react";
 import styled, { type IStyledComponent } from "styled-components";
-import usePopup from "./store/absPopupHook";
-import { getPopup } from "./AbsPopupType";
 import Spinner from "../loading/display/Spinner";
+import { getPopup } from "./AbsPopupType";
+import usePopup from "./store/absPopupHook";
 
 export const PopupArea = styled.section`
   display: flex;
